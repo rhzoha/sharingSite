@@ -57,7 +57,9 @@
                                             <h5 class="card-title">
                                                 {{$post->title}}
                                             </h5>
-                                            <div class="card-text">{{$post->body}}</div>   
+                                            <div class="card-text">{{$post->body}}</div>
+                                            <hr>
+                                            <p class="card-text"><small class="text-muted"> {{$post->comments->count()}} comments </small></p>   
                                         </div>
                                     </a>
                                 @else
@@ -67,7 +69,9 @@
                                             <h5 class="card-title">
                                                 {{$post->title}}
                                             </h5>
-                                            <div class="card-text">{{$post->body}}</div>   
+                                            <div class="card-text">{{$post->body}}</div>
+                                            <hr>
+                                            <p class="card-text"><small class="text-muted">{{$post->comments->count()}} comments</small></p>  
                                         </div>
                                     </a>
                                 @endif

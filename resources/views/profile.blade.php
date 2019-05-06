@@ -114,7 +114,9 @@
                                             <h5 class="card-title">
                                                 {{$ownerPost->title}}
                                             </h5>
-                                            <div class="card-text">{{$ownerPost->body}}</div>   
+                                            <div class="card-text">{{$ownerPost->body}}</div>
+                                            <hr>
+                                            <p class="card-text"><small class="text-muted"> {{$ownerPost->comments->count()}} comments </small></p>   
                                         </div>
                                     </a>
                                 </div>
